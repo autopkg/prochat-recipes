@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Download FreeMind disk image and build a package.</string>
+    <string>Download FreeMind disk image, build a package and import it into munki.</string>
     <key>Identifier</key>
     <string>com.github.prochat.munki.freemind</string>
     <key>Input</key>
@@ -21,7 +21,7 @@
                 <string>testing</string>
             </array>
             <key>description</key>
-            <string>OpenSource MindMapper.</string>
+            <string>FreeMind is a free mind mapping application written in Java. FreeMind is licensed under the GNU General Public License. It provides extensive export capabilities.</string>
             <key>display_name</key>
             <string>%DISPLAY_NAME%</string>
             <key>name</key>
@@ -38,18 +38,22 @@
     <string>com.github.prochat.pkg.freemind</string>
     <key>Process</key>
     <array>
-    <dict>
-         <key>Arguments</key>
-         <dict>
-             <key>pkg_path</key>
-             <string>%pkg_path%</string>
-             <key>repo_subdirectory</key>
-             <string>%MUNKI_REPO_SUBDIR%</string>
-         </dict>
-         <key>Processor</key>
-         <string>MunkiImporter</string>
-     </dict>
-	</array>
-</dict>
+	<dict>
+	    <key>Processor</key>
+	    <string>MunkiPkginfoMerger</string>
+	</dict>
+	<dict>
+	 <key>Arguments</key>
+	 <dict>
+	     <key>pkg_path</key>
+	     <string>%pkg_path%</string>
+	     <key>repo_subdirectory</key>
+	     <string>%MUNKI_REPO_SUBDIR%</string>
+	 </dict>
+	 <key>Processor</key>
+	 <string>MunkiImporter</string>
+	</dict>
+    </array>
+    </dict>
 </plist>
 
