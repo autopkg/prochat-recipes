@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>local.download.LoggerPro3</string>
+	<string>com.github.prochat.download.loggerpro_license</string>
 	<key>Input</key>
 	<dict>
 		<key>DOWNLOAD_URL</key>
