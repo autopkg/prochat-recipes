@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>local.pkg.LoggerPro3</string>
+	<string>com.github.prochat.pkg.loggerpro_license</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
@@ -12,7 +12,7 @@
 		<string>3</string>
 	</dict>
 	<key>ParentRecipe</key>
-	<string>local.download.LoggerPro3</string>
+	<string>com.github.prochat.download.loggerpro_update</string>
 	<key>Process</key>
 	<array>
 		<dict>
