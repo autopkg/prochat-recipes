@@ -14,7 +14,7 @@ ex. `https://vernier.com/d/XXXXX`
 
 1. Add the prochat-recipes repo to autopkg.
 
-2. Create overrides for both the LoggerPro_License.download.recipe and LoggerPro_License.recipe
+2. Create overrides for both the LoggerPro_License.download.recipe and LoggerPro_License.pkg.recipe
 - You can change the override recipe name should the major version of the software change in the future (ex. LoggerPro4)
 
 3. Substitute your unique Vernier licensed software download URL in the `DOWNLOAD_URL` input entry
