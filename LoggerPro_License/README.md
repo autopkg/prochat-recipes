@@ -1,8 +1,10 @@
 ### LoggerPro_License vs. Update?
 
-The original LoggerPro_Update download recipe points to the publicly availble Vernier update URL, which requires an originally licensed installation to have occurred in order to install.
+The original LoggerPro_Update download recipe points to the publicly available Vernier update URL, which requires an originally licensed installation to have occurred in order to install.
 
 For individuals and institutions with licensed versions of the software, when logging into your Vernier account online you can actually use your unique licensed software URLs in the download recipe instead!
+
+![screenshot](https://github.com/apizz/prochat-recipes/blob/master/LoggerPro_License/LoggerPro_License_Page.png)
 
 Each of your licensed software contain unique links for Mac & Windows.  The only difference between these is a unique 5-digit number at the end of the URL. Right-click and copy the download URL for Mac or Windows download you care about. It will look something like this:
 
@@ -12,14 +14,14 @@ ex. `https://vernier.com/d/XXXXX`
 
 1. Add the prochat-recipes repo to autopkg.
 
-2. Create overrides for both the LoggerPro3.download and LoggerPro3.pkg recipes
+2. Create overrides for both the LoggerPro_License.download.recipe and LoggerPro_License.recipe
 - You can change the override recipe name should the major version of the software change in the future (ex. LoggerPro4)
 
 3. Substitute your unique Vernier licensed software download URL in the `DOWNLOAD_URL` input entry
 
 4. Update the Logger Pro major version number as necessary (`MAJOR_VERSION`)
 
-### LoggerPro_License Recipe Improvements
+### LoggerPro_License Recipe Changes
 
 #### LoggerPro3.download.recipe
 
@@ -74,7 +76,7 @@ ex. `https://vernier.com/d/XXXXX`
 	</dict>
 </dict>
 ```
-3. With the app's version, use the `PkgCopier` processor to copy the original installer PKG but rename it with the standard autopkg `%NAME%-%version%.pkg` and do some cleanup.
+3. With the app's version, use the `PkgCopier` processor to copy the original installer PKG but rename it with the standard autopkg `%NAME%-%version%.pkg` and lastly do some cleanup.
 ```
 <dict>
 	<key>Processor</key>
