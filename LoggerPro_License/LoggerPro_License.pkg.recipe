@@ -12,7 +12,7 @@
 		<string>3</string>
 	</dict>
 	<key>ParentRecipe</key>
-	<string>com.github.prochat.download.loggerpro_update</string>
+	<string>com.github.prochat.download.loggerpro_license</string>
 	<key>Process</key>
 	<array>
 		<dict>
