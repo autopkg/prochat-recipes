@@ -32,7 +32,7 @@ ex. `https://vernier.com/d/XXXXX`
 ```
 2. Because there is a static URL which will always download the latest version of the Vernier software, we don't need to utilize the `URLTextSearcher` processor at all.
 
-3. Added `MAJOR_VERSION` input variable should Logger Pro every move beyond version 3 for recipe override future-proofing.
+3. Added `MAJOR_VERSION` input variable should Logger Pro ever move beyond version 3 for recipe override future-proofing.
 ```
 <key>MAJOR_VERSION</key>
 <string>3</string>
