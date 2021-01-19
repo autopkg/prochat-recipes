@@ -71,11 +71,11 @@
 					<string>purge_ds_store</string>
 					<key>pkgdir</key>
 					<string>%RECIPE_CACHE_DIR%</string>
+					<key>pkgname</key>
+					<string>%NAME%-%dversion%</string>
+					<key>version</key>
+					<string>%dversion%</string>
 				</dict>
-				<key>pkgname</key>
-				<string>%NAME%-%dversion%</string>
-				<key>version</key>
-				<string>%dversion%</string>
 			</dict>
 			<key>Processor</key>
 			<string>PkgCreator</string>
