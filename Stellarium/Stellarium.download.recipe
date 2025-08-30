@@ -27,6 +27,15 @@ By  default downloads latest version</string>
 		<dict>
 			<key>Arguments</key>
 			<dict>
+				<key>warning_message</key>
+				<string>The Stellarium recipes in prochat-recipes are deprecated. Please consider using Stellarium.pkg in ahousseini-recipes and/or Stellarium.munki in joshua-d-miller-recipes.</string>
+			</dict>
+			<key>Processor</key>
+			<string>DeprecationWarning</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
 				<key>re_pattern</key>
 				<string>%SEARCH_PATTERN_URL%</string>
 				<key>request_headers</key>
